@@ -23,7 +23,7 @@ function Index () {
                         ANGREN SHAHAR 2-SON <br />
                         SPORT MAKTABI  </h2>
                         <Link to="/contact">
-                            <button >Bog'lanish</button>
+                            <button className='btn'>Bog'lanish</button>
                         </Link>   
                       
                     

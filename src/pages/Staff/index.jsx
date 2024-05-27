@@ -33,7 +33,7 @@ function Index(props) {
                     </div>
                 </div>
                 <div class="bg-white p-4 shadow-md rounded-lg">
-                    <img src={F} class=" w-full h-auto rounded-lg mb-4 " alt="" />
+                    <img src={F} class=" w-full h-56 rounded-lg mb-4 " alt="" />
                     <div class="text-center">
                         <h2 class="text-lg text-black font-semibold mb-2">Taekwon-do Wtf treneri</h2>
                         <p class="text-gray-600">2015-2016 yy. – Toshkent viloyati Angren shahar Xalq Ta’limi Muassasalarini Faoliyatini Metodik Ta’minlash va Tashkil Etish Bo’limiga qarashli 4-Bolalar-o’smirlar sport maktabining Taekvando bo’limi o’qituvchi-murabbiyi
