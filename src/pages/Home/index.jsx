@@ -18,16 +18,16 @@ function Index () {
         <div className=''>
             <div id='home' className="background">
                 <div className="overlay"></div>
-                <div class="con">
-                    <h2>
-                        ANGREN SHAHAR 2-SON <br />
-                        SPORT MAKTABI  </h2>
-                        <Link to="/contact">
-                            <button className='btn'>Bog'lanish</button>
-                        </Link>   
-                      
-                    
-                 
+                <div class="content">
+                   <h3 className='title'>
+                
+                      SIZ HAM <br/> JAXONGA O'Z <br /> NOMINGIZNI <br/> TANITING !  </h3>
+                        
+                    <Link to="/contact">
+                        <button type="button" class=" border-2 border-black bg-white  text-black focus:outline-none hover:bg-black focus:ring-4 focus:ring-black font-medium rounded-lg text-l  px-8 py-2 me-2 mb-2 dark:bg-black dark:text-white dark:border-black dark:hover:bg-white  text-black dark:hover:border-black dark:focus:ring-black">Bog'lanish</button>
+
+                        {/* <button className='btn1'>Bog'lanish</button> */}
+                    </Link>
                 </div>
                
   </div >
@@ -49,6 +49,7 @@ function Index () {
 
 
 export default Index;
+<Link to="/contact" class="  px-8 py-2   rounded-lg text-sm border-2 border-black bg-white  text-black transition duration-100 hover:bg-black hover:text-white" ></Link>
 //  <div class="deconstructed">
 // DECONSTRUCTED
 //     < div > DECONSTRUCTED</div >

@@ -34,8 +34,13 @@ height: 100vh;
 /* bu navbar orqaisdagi div */
 .div{
 
-  height: 100px;
+  height: 90px;
+
 }
+
+
+
+
 /* tugadi */
 
 /* bu home  */
@@ -43,74 +48,32 @@ height: 100vh;
   background-image: url('../src/assets/home/2024-05-25\ 15.59.06\ 3.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
-align-items: start;
-justify-content: end;
-cursor: pointer;
+ flex-wrap: wrap;
+ cursor: pointer;
+
+
 
 }
- .con {
-   width: 100%;
-   height: auto;
+ .background .content {
+  flex: 1 1 40rem;
+padding:  3% 1% ;
+
    /* position: absolute; */
 
-display: flex;
-  justify-content: center;
-  align-items: center;
-flex-direction: column;
-padding: 170px 0;
 z-index: 2;
-border: 1px solid red;
+
  }
- .btn{
-  margin: auto;
- }
+.background .content .title{
+      font-size: 4.5rem;
+      color: white;
+text-shadow: 5px 5px black;
+
+    }
 
  
- h2{
-  text-align: center;
-font-size: 55px;
-  text-transform: uppercase;
-  color: #fff;
-/* text-shadow: 5px 5px 15px rgba(33, 31, 31, 0.82); */
- }
- 
-   
- 
-  
-       
-@media   (  max-width: 768px) {
-  .con {
-    width: auto;
-    height: auto;
-    width: 100%;
-      height: auto;
-      position: relative;
-    
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 170px 0;
-      z-index: 2;
-  
-  }
-
-  h2
- {
-    font-size: 17px;
-    text-shadow: 3px 3px 10px rgba(33, 31, 31, 0.82);
-    text-align: center;
-  
-  }
-
- 
-}
- 
-
-
 .overlay {
   position: absolute;
   top: 0;
@@ -123,56 +86,59 @@ font-size: 55px;
 
 
 
-.con button {
 
-  position: absolute;
-width: 150px;
-height: 40px;
-text-align: center;
 
-  font-size: 1.2em;
-  
-  background-color: #023abd;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-
-}
-
-.con button:hover {
-  background-color: #0056b3;
-}
 @media (max-width: 768px) {
-  .content {
-    top: 30%;
-   
-
+  .background .content {
+    padding-top: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .content button {
+  .background img {
     width: 100%;
-    max-width: 200px;
+    max-width: 368px;
+  }
 
-    margin: 20px  80px auto;
-
-    position: static;
-
+  .background .content .title {
+    font-size: 3rem;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
+@media (max-width: 480px) {
+  .background .content {
+    padding-top: 2rem;
+    padding-left: 10px;
+    padding-right: 15px;
   }
 
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
+  .background img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .background .content .title {
+    font-size: 2rem;
   }
 }
+
+@media (max-width: 320px) {
+  .background .content {
+    padding-top: 7rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .background img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .background .content .title {
+    font-size: 2rem;
+  }
+}
+
 
 
 /* home tugadi */
@@ -238,7 +204,7 @@ padding: 50px  20px 0;
 /* about tugadi */
 
 /* sports */
-.awards-container {
+/* .awards-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -296,4 +262,9 @@ img {
     flex: 1 0 100%;
 
   }
-}
+} */
+
+
+
+
+/* staff.css */
