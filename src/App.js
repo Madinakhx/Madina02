@@ -7,12 +7,15 @@ import Awards from "./pages/Awards";
 import Staff from './pages/Staff';
 import Sports from './pages/Sports';
 import About from './pages/About'
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from './components/Navbar/navbar';
 import Middle from './components/middle'
-
+import Aos from 'aos';
 
 function App() {
+    useEffect( () => {
+        Aos.init();
+    }, [])
   return (
       <div>
 <Navbar/>

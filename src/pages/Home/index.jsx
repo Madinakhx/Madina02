@@ -1,13 +1,11 @@
 import React from 'react';
-import Navbar from "../../components/Navbar/navbar";
 import About from "../About";
-import home from "../../assets/home/2024-05-25 15.59.06 3.jpg"
 import Contact from "../Contact"
 import Sports from "../Sports"
 import Awards from "../Awards"
 import Staff from "../Staff"
 import Middle from "../../components/middle"
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -19,15 +17,16 @@ function Index () {
             <div id='home' className="background">
                 <div className="overlay"></div>
                 <div class="content">
-                   <h3 className='title'>
+                   <h1 data-aos={"fade-up"}>
                 
-                      SIZ HAM <br/> JAXONGA O'Z <br /> NOMINGIZNI <br/> TANITING !  </h3>
-                        
-                    <Link to="/contact">
-                        <button type="button" class=" border-2 border-black bg-white  text-black focus:outline-none hover:bg-black focus:ring-4 focus:ring-black font-medium rounded-lg text-l  px-8 py-2 me-2 mb-2 dark:bg-black dark:text-white dark:border-black dark:hover:bg-white  text-black dark:hover:border-black dark:focus:ring-black">Bog'lanish</button>
+                        SIZ HAM  JAHONGA  O'Z  NOMINGIZNI <br /> TANITING !  
+                    </h1>
+                    <a href="/contact"><button data-aos={"fade-up"} className='btn'>Bog'lanish</button></a>
 
-                        {/* <button className='btn1'>Bog'lanish</button> */}
-                    </Link>
+                    
+
+                
+                    
                 </div>
                
   </div >
@@ -49,7 +48,9 @@ function Index () {
 
 
 export default Index;
-<Link to="/contact" class="  px-8 py-2   rounded-lg text-sm border-2 border-black bg-white  text-black transition duration-100 hover:bg-black hover:text-white" ></Link>
+{/* <button type="button" class=" w-30 h-10 border-2 border-black bg-white  text-black focus:outline-none hover:bg-black focus:ring-4 focus:ring-black font-medium rounded-lg text-l    dark:bg-black dark:text-white dark:border-black dark:hover:bg-white  dark:hover:border-black dark:focus:ring-black text-black ">Bog'lanish</button> */}
+
+{/* <Link to="/contact" class="  px-8 py-2   rounded-lg text-sm border-2 border-black bg-white  text-black transition duration-100 hover:bg-black hover:text-white" ></Link> */}
 //  <div class="deconstructed">
 // DECONSTRUCTED
 //     < div > DECONSTRUCTED</div >

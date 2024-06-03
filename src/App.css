@@ -51,7 +51,6 @@ height: 100vh;
   min-height: 100vh;
   position: relative;
   display: flex;
- flex-wrap: wrap;
  cursor: pointer;
 
 
@@ -59,21 +58,43 @@ height: 100vh;
 }
  .background .content {
   flex: 1 1 40rem;
-padding:  3% 1% ;
-
-   /* position: absolute; */
+padding: 12%;
 
 z-index: 2;
 
  }
-.background .content .title{
-      font-size: 4.5rem;
+
+  .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
       color: white;
-text-shadow: 5px 5px black;
-
     }
+  
+ .content h1 {
+   font-size: 3.5em;
+   padding: 0 0 0 10px;
+   margin: 0;
+   text-shadow: 5px 5px black;
+ }
 
- 
+ .content .btn{
+
+  padding: 12px 30px;
+  color: white;
+  background-color:black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+}
+  .content .btn:hover {
+   background-color: white;
+   border:2px solid  black;
+   color: black;
+ }
 .overlay {
   position: absolute;
   top: 0;
@@ -85,59 +106,55 @@ text-shadow: 5px 5px black;
 
 
 
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 1.5em;
+  }
 
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
 
-
+/* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  .background .content {
-    padding-top: 2rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  .content h1 {
+    font-size: 1.8em;
   }
 
-  .background img {
-    width: 100%;
-    max-width: 368px;
-  }
-
-  .background .content .title {
-    font-size: 3rem;
+  .btn {
+    padding: 9px 18px;
+    font-size: 1em;
   }
 }
 
-@media (max-width: 480px) {
-  .background .content {
-    padding-top: 2rem;
-    padding-left: 10px;
-    padding-right: 15px;
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .content h1 {
+    font-size: 2em;
   }
 
-  .background img {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .background .content .title {
-    font-size: 2rem;
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
   }
 }
 
-@media (max-width: 320px) {
-  .background .content {
-    padding-top: 7rem;
-    padding-left: 10px;
-    padding-right: 10px;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .content h1 {
+
+    font-size: 2.2em;
   }
 
-  .background img {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .background .content .title {
-    font-size: 2rem;
+  .btn {
+    padding: 11px 22px;
+    font-size: 1.2em;
   }
 }
+
+
 
 
 
@@ -153,36 +170,58 @@ text-shadow: 5px 5px black;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height:100vh;
+  height: 90vh;
 
 }
 
-.text-container {
+.text {
   flex: 0 0 45%;
-  height: 600px;
- font-size: 20px;
+  height: auto;
+  font-size: 20px;
   padding: 0 20px;
-  
+
 
 }
-.text-container h1{
+
+.text h1 {
   font-size: 30px;
 }
-.text-container p{
-  margin-top: 10px;
-  line-height: 33px;
+
+.text p {
+padding: 20px 0;
+  line-height: 31px;
 }
-.image-container {
+
+.image {
   flex: 0 0 55%;
+  height: auto;
+padding: 20px;
 
-  padding: 20px;
 }
 
-img {
+.image img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 
+}
+
+@media screen and (max-width: 320px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text {
+    flex: 1 0 90%;
+    padding: 10px 10px 0;
+  }
+
+  .image {
+    flex: 1 0 100%;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -192,60 +231,117 @@ img {
 
   }
 
-  .text-container{
-flex: 1 0 90%;
-padding: 50px  20px 0;
+  .text {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
   }
-  .image-container {
+
+  .image {
     flex: 1 0 100%;
 
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image {
+    flex: 1 0 100%;
+
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image {
+    flex: 1 0 100%;
+
+  }
+}
+
 /* about tugadi */
 
-/* sports */
-/* .awards-container {
+
+/* awards */
+
+.awards-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-
-
-
+  cursor: pointer;
 }
 
-.text-containerr {
+.text-side {
   flex: 0 0 45%;
   height: 600px;
   font-size: 20px;
-  padding: 50px 20px;
+  padding: 0 20px;
 
 
 }
 
-.text-containerr h1 {
+.text-side h1 {
   font-size: 30px;
 }
 
-.text-containerr p {
-  margin-top: 10px;
-  line-height: 35px;
+.text-side p {
+ padding: 25px 0;
+  line-height: 33px;
 }
 
-.image-containerr {
+.image-side {
   flex: 0 0 55%;
 
   padding: 20px;
 }
 
-img {
+ .image-side img {
   width: 100%;
-  height: 720px;
-  object-fit: cover;
+  height: 100vh;
+  object-fit:cover;
+  padding: 20px;
+  border-radius: 100px;
 
 }
 
+@media screen and (max-width: 320px) {
+  .awards-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-side {
+    flex: 1 0 90%;
+    padding: 10px 10px 0;
+  }
+
+  .image-side {
+    flex: 1 0 100%;
+
+  }
+}
 @media screen and (max-width: 768px) {
   .awards-container {
     flex-direction: column;
@@ -253,18 +349,172 @@ img {
 
   }
 
-  .text-containerr {
+  .text-side {
     flex: 1 0 90%;
     padding: 50px 20px 0;
   }
 
-  .image-containerr {
+  .image-side {
     flex: 1 0 100%;
 
   }
-} */
+}
+
+@media screen and (max-width: 1024px) {
+  .awards-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-side {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image-side {
+    flex: 1 0 100%;
+
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .awards-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-side {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image-side {
+    flex: 1 0 100%;
+
+  }
+}
+
+
+
+.winner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.text-s {
+  flex: 0 0 45%;
+  height: 600px;
+  font-size: 20px;
+  padding: 0 20px;
+
+
+}
+
+.text-s h1 {
+  font-size: 30px;
+}
+
+.text-s p {
+  padding: 25px 0;
+  line-height: 33px;
+}
+
+.image-s {
+  flex: 0 0 55%;
+
+  padding: 20px;
+}
+
+.image-s img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 100px;
+
+}
+
+@media screen and (max-width: 320px) {
+  .winner-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-s {
+    flex: 1 0 90%;
+    padding: 10px 10px 0;
+  }
+
+  .image-s {
+    flex: 1 0 100%;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .winner-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-s {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image-s {
+    flex: 1 0 100%;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .winner-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-s {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image-s {
+    flex: 1 0 100%;
+
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .winner-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .text-s {
+    flex: 1 0 90%;
+    padding: 50px 20px 0;
+  }
+
+  .image-s {
+    flex: 1 0 100%;
+
+  }
+}
+
+/* awards tugadi */
 
 
 
 
-/* staff.css */
+
